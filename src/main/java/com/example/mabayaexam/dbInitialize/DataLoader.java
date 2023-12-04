@@ -16,10 +16,12 @@ public class DataLoader implements CommandLineRunner {
 
     private final ProductRepository productRepository;
     private final DataInitializationProperties dataInitializationProperties;
+    private Random random;
 
     public DataLoader(ProductRepository productRepository, DataInitializationProperties dataInitializationProperties) {
         this.productRepository = productRepository;
         this.dataInitializationProperties = dataInitializationProperties;
+        random = new Random();
     }
 
     @Override
@@ -30,8 +32,7 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void generateAndSaveProducts() {
-        List<String> categories = Arrays.asList("Electronics", "Clothing", "Books", "Home Appliances");
-        Random random = new Random();
+        List<String> categories = dataInitializationProperties.getCategories(); // Use categories from the configuration
 
         for (int i = 0; i < 10; i++) {
             Product product = new Product();
