@@ -1,12 +1,9 @@
 package com.example.mabayaexam.dbInitialize;
 
-import com.example.mabayaexam.dbInitialize.DataInitializationProperties;
 import com.example.mabayaexam.entities.Product;
 import com.example.mabayaexam.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -38,7 +35,7 @@ public class DataLoader implements CommandLineRunner {
             Product product = new Product();
             product.setTitle("Product " + i);
             product.setCategory(categories.get(random.nextInt(categories.size())));
-            product.setPrice(random.nextDouble() * 1000); // Adjust the range based on your needs
+            product.setPrice(random.nextDouble() * 1000);
             product.setSerialNumber("SN" + i);
 
             productRepository.save(product);

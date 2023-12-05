@@ -8,11 +8,13 @@ import com.example.mabayaexam.repository.CampaignRepository;
 import com.example.mabayaexam.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-// CampaignService.java
+
 @Service
+@Validated
 public class CampaignService {
     @Autowired
     private CampaignRepository campaignRepository;
