@@ -5,6 +5,7 @@ liron.kotev@gmail.com
 
 ## DB Connection
 
+After you run the project,
 Access the H2 database console via [this link](http://localhost:8080/h2-console/login.jsp?jsessionid=93333441b811bcf1004f46290f6a9efa).
 
 **Connection Details:**
@@ -12,7 +13,12 @@ Access the H2 database console via [this link](http://localhost:8080/h2-console/
 - Setting Name: Generic H2(Embedded)
 - Driver Class: org.h2.Driver
 - JDBC URL: jdbc:h2:mem:testdb
-- User Name: sa
+- User Name: as
+
+![db](https://github.com/liron977/MabayaExam/assets/75321554/28bd0b60-abc1-4cc0-9cff-8a4357edc452)
+
+![dbtables](https://github.com/liron977/MabayaExam/assets/75321554/036edb0c-7b60-4770-a7c8-e32003c004e3)
+
 
 ## Postman Examples
 
@@ -29,11 +35,17 @@ curl --location 'http://localhost:8080/api/campaigns/create' \
 "bid": 30000
 }'
 
+
+![post](https://github.com/liron977/MabayaExam/assets/75321554/46de6d45-60d7-44c4-9ec9-e72a594d56de)
+
+
 ## Serve Ad
 
 Use the following API to retrieve ads:
 
 curl --location 'http://localhost:8080/api/ad/serve?category=Clothing'
+
+![get](https://github.com/liron977/MabayaExam/assets/75321554/c32e755e-4267-4d3d-bf33-ff716ad3fd75)
 
 
 ## more info
