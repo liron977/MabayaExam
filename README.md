@@ -48,7 +48,7 @@ curl --location 'http://localhost:8080/api/ad/serve?category=Clothing'
 ![get](https://github.com/liron977/MabayaExam/assets/75321554/c32e755e-4267-4d3d-bf33-ff716ad3fd75)
 
 
-## more info
+## More info
 
 While attempting to enhance the efficiency of the query, I encountered challenges 
 during implementation, leading me to decide to remove the modifications. 
